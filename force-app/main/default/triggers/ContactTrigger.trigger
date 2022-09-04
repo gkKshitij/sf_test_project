@@ -5,7 +5,7 @@ trigger ContactTrigger on Contact (after insert, after update, after delete, aft
         }
 
         when AFTER_UPDATE {
-            ContactTriggerHandler.afterUpdatetHandler(Trigger.new, Trigger.oldMap);
+            ContactTriggerHandler.afterUpdateHandler(Trigger.new, Trigger.oldMap);
         }
     }
 
